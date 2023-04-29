@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.rahu.RahuTime">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/wpbackground" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-5dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/polygon" />
+
+
+    <LinearLayout
+        android:id="@+id/rahu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="#0F3A2424"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context=".RahuMainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="UnusedAttribute,UselessParent">
+
+                    <TextView
+                        android:id="@+id/date_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thursday , 09 May 2019"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sun_rise_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="25dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        tools:ignore="UnusedAttribute,UselessParent">
+
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/sunrice" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="හිරු උදාව"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/sun_raise_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="05:54:58"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="25dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        tools:ignore="UnusedAttribute,UselessParent">
+
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/sunset1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="හිරු බැසීම"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/sun_fall_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="06:18:44"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/good_direction_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="UnusedAttribute">
+
+                    <TextView
+                        android:id="@+id/good_direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="හොඳ දිශාව"
+                        android:textColor="#8BC34A"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bad_direction_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="UnusedAttribute">
+
+                    <TextView
+                        android:id="@+id/bad_direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="අසුභ දිශාව"
+                        android:textColor="#ff5555"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rahu_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="#F37C5D28"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="රාහු කාලය"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/time_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/day"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="30dp"
+
+                        android:gravity="center"
+                        android:text="දිවා "
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+                    <Button
+                        android:id="@+id/night"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="30dp"
+
+                        android:gravity="center"
+                        android:text="රෑ"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:background="#FF9800"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="UnusedAttribute">
+
+                    <TextView
+                        android:id="@+id/rahu_time_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PM 01:39:49   -  PM 03:12:47"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <Button
+                        android:id="@+id/today"
+                        android:layout_width="150dp"
+                        android:layout_height="44dp"
+                        android:padding="2dp"
+                        android:text="අද"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        tools:ignore="ButtonStyle,HardcodedText" />
+
+                    <Button
+                        android:id="@+id/monday"
+                        android:layout_width="150dp"
+                        android:layout_height="44dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="2dp"
+                        android:text="සඳුදා"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="UnusedAttribute,UselessParent">
+
+                    <Button
+                        android:id="@+id/tuesday"
+                        android:layout_width="150dp"
+                        android:layout_height="44dp"
+                        android:padding="2dp"
+
+                        android:text="අඟහරුවාදා"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        tools:ignore="ButtonStyle,HardcodedText" />
+
+                    <Button
+                        android:id="@+id/wednesday"
+                        android:layout_width="150dp"
+                        android:layout_height="44dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="2dp"
+                        android:text="බදාදා"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <Button
+                        android:id="@+id/thursday"
+                        android:layout_width="150dp"
+                        android:layout_height="44dp"
+                        android:padding="2dp"
+                        android:text="බ්‍රහස්පතින්දා"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        tools:ignore="ButtonStyle,HardcodedText" />
+
+                    <Button
+                        android:id="@+id/friday"
+                        android:layout_width="150dp"
+                        android:layout_height="44dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="2dp"
+                        android:text="සිකුරාදා"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="UnusedAttribute,UselessParent">
+
+                    <Button
+                        android:id="@+id/saturday"
+                        android:layout_width="150dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="සෙනසුරාදා"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        tools:ignore="ButtonStyle,HardcodedText" />
+
+                    <Button
+                        android:id="@+id/sunday"
+                        android:layout_width="150dp"
+                        android:layout_height="44dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="2dp"
+                        android:text="ඉරිදා"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

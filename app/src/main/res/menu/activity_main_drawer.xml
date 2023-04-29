@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view" xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+
+
+        <item
+            android:id="@+id/nav_poyaDay"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="පො‌හොය දින" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="අයවැය" />
+
+
+
+        <item
+            android:id="@+id/nav_niwadudina"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="නිවාඩු දින" />
+
+        <item
+            android:id="@+id/nav_rahu"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="රාහු කාලය " />
+
+        <item
+            android:id="@+id/nav_marusitina"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="මරු සිටින දිශාව" />
+
+
+    </group>
+</menu>

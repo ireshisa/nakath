@@ -1,0 +1,955 @@
+{
+  "events": [
+    {
+      "holiday": "true",
+      "name": "Neujahr",
+      "month": "jan",
+      "day": "1",
+      "type": "National holiday",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Epiphany",
+      "month": "jan",
+      "day": "6",
+      "type": "Observance",
+      "to": "SN, TH, NDS (community)",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Epiphany",
+      "month": "jan",
+      "day": "6",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Franco-German Day",
+      "month": "jan",
+      "day": "22",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Remembrance Day for the Victims",
+      "month": "jan",
+      "day": "27",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Valentine's Day",
+      "month": "feb",
+      "day": "14",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Hizir Fast",
+      "month": "feb",
+      "day": "16",
+      "type": "Observance",
+      "to": "HH, HB",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Shrove Monday",
+      "month": "feb",
+      "day": "20",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Carnival Tuesday",
+      "month": "feb",
+      "day": "21",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Carnival / Ash Wednesday",
+      "month": "feb",
+      "day": "22",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "International Women's Day",
+      "month": "mar",
+      "day": "8",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "International Women's Day",
+      "month": "mar",
+      "day": "8",
+      "type": "Observance",
+      "to": "All except B",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "St. Patrick's Day",
+      "month": "mar",
+      "day": "17",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Anniversary of the March Revolution",
+      "month": "mar",
+      "day": "18",
+      "type": "Observance",
+      "to": "Berlin",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "March Equinox",
+      "month": "mar",
+      "day": "20",
+      "type": "Season",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Alevitic New Year",
+      "month": "mar",
+      "day": "21",
+      "type": "Season",
+      "to": "HH, HB",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Daylight Saving Time starts",
+      "month": "mar",
+      "day": "26",
+      "type": "Season",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Palm Sunday",
+      "month": "apr",
+      "day": "02",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Maundy Thursday",
+      "month": "apr",
+      "day": "06",
+      "type": "Observance",
+      "to": "All except BY, HE, NRW, RLP, SL",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Good Friday",
+      "month": "apr",
+      "day": "07",
+      "type": "National holiday",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Holy Saturday",
+      "month": "apr",
+      "day": "08",
+      "type": "Observance",
+      "to": "BY, HE, NDS, SL, RLP",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Easter Sunday",
+      "month": "apr",
+      "day": "09",
+      "type": "Christian",
+      "to": "Brandenburg",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Easter Monday",
+      "month": "apr",
+      "day": "10",
+      "type": "Christian",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Sixth Day of Passover",
+      "month": "apr",
+      "day": "11",
+      "type": "Observance",
+      "to": "BY, HB, SL",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Seventh Day of Passover",
+      "month": "apr",
+      "day": "12",
+      "type": "Observance",
+      "to": "BY, HB, SL",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Eid ul Fitr",
+      "month": "apr",
+      "day": "22",
+      "type": "Observance",
+      "to": "HB, HH",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "German Beer Day",
+      "month": "apr",
+      "day": "23",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Girls' Day / Boys' Day",
+      "month": "apr",
+      "day": "27",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Walpurgis Night",
+      "month": "apr",
+      "day": "30",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "May Day",
+      "month": "may",
+      "day": "1",
+      "type": "National holiday",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Europe Day (Council of Europe",
+      "month": "may",
+      "day": "5",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Anniversary of the End of World War II",
+      "month": "may",
+      "day": "8",
+      "type": "Observance",
+      "to": "B, BB, HB, MVP, TH",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Europe Day (European Union)",
+      "month": "may",
+      "day": "9",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Mother’s Day celebrates the achievements",
+      "month": "may",
+      "day": "14",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Father's Day",
+      "month": "may",
+      "day": "18",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Ascension Day",
+      "month": "may",
+      "day": "18",
+      "type": "National holiday",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Constitution Day",
+      "month": "may",
+      "day": "23",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "First Day of Shavuot",
+      "month": "may",
+      "day": "26",
+      "type": "Observance",
+      "to": "BY, HB, SL",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Second Day of Shavuot",
+      "month": "may",
+      "day": "27",
+      "type": "Observance",
+      "to": "BY, HB, SL",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Whit Sunday",
+      "month": "may",
+      "day": "28",
+      "type": "Observance",
+      "to": "All except BB",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Whit Monday",
+      "month": "may",
+      "day": "29",
+      "type": "National holiday",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "International Childrens' Day",
+      "month": "jun",
+      "day": "1",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "European Bicycle Day",
+      "month": "jun",
+      "day": "3",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Corpus Christi",
+      "month": "jun",
+      "day": "8",
+      "type": "Observance",
+      "to": "BW, BY, HE, NRW, RLP, SL, SN (community), TH (community)",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Anniversary of the Popular Uprising in the GDR",
+      "month": "jun",
+      "day": "17",
+      "type": "Observance",
+      "to": "Berlin",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Car-free Sunday",
+      "month": "jun",
+      "day": "18",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "June Solstice",
+      "month": "jun",
+      "day": "21",
+      "type": "seasons",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "St. John",
+      "month": "jun",
+      "day": "24",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "St. John",
+      "month": "jun",
+      "day": "24",
+      "type": "Observance",
+      "to": "Saxony",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Architecture Day",
+      "month": "jun",
+      "day": "24",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+
+  ,
+    {
+      "holiday": "true",
+      "name": "St Peter and Paul",
+      "month": "jun",
+      "day": "29",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Peace Festival in Augsburg",
+      "month": "aug",
+      "day": "8",
+      "type": "Local holiday",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Assumption of Mary",
+      "month": "aug",
+      "day": "15",
+      "type": "Local holiday",
+      "to": "SN, TH",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Anti War Day",
+      "month": "sep",
+      "day": "1",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "German Language Day",
+      "month": "sep",
+      "day": "9",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "European Heritage Days",
+      "month": "sep",
+      "day": "10",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Rosh Hashana",
+      "month": "sep",
+      "day": "16",
+      "type": "Observance",
+      "to": "BY, HB, NRW, SL",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Rosh Hashana",
+      "month": "sep",
+      "day": "16",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Second Day of Rosh Hashana",
+      "month": "sep",
+      "day": "17",
+      "type": "Observance",
+      "to": "BY, HB, NRW, SL",
+      "except": "none"
+    }
+    ,
+    {
+      "holiday": "true",
+      "name": "German World Children's Day",
+      "month": "sep",
+      "day": "20",
+      "type": "Observancey",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "September Equinox",
+      "month": "sep",
+      "day": "23",
+      "type": "Season",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Yom Kippur",
+      "month": "sep",
+      "day": "25",
+      "type": "Season",
+      "to": "BY, HB, NRW, SL",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "First day of Sukkot",
+      "month": "sep",
+      "day": "30",
+      "type": "Observance",
+      "to": "BY, HB, SL",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "First day of Sukkot",
+      "month": "sep",
+      "day": "30",
+      "type": "Observance",
+      "to": "BY, HB, SL",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Harvest Festival",
+      "month": "oct",
+      "day": "1",
+      "type": "Observance",
+      "to": "BY, HB, SL",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Second Day of Sukkot",
+      "month": "oct",
+      "day": "1",
+      "type": "Observance",
+      "to": "BY, HB, SL",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Day of German Unity",
+      "month": "oct",
+      "day": "3",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Sixth Day of Sukkot",
+      "month": "oct",
+      "day": "5",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Seventh Day of Sukkot",
+      "month": "oct",
+      "day": "6",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Shemini Atzeret",
+      "month": "oct",
+      "day": "7",
+      "type": "Observance",
+      "to": "HB, SL",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Simchat Torah",
+      "month": "oct",
+      "day": "8",
+      "type": "Observance",
+      "to": "HB",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Grandparents' Day",
+      "month": "oct",
+      "day": "8",
+      "type": "Observance",
+      "to": "Bavaria",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Daylight Saving Time ends",
+      "month": "oct",
+      "day": "29",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }  ,
+    {
+      "holiday": "true",
+      "name": "World Thrift Day",
+      "month": "oct",
+      "day": "30",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Reformation Day",
+      "month": "oct",
+      "day": "31",
+      "type": "Observance",
+      "to": "BW, HB",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Reformation Day",
+      "month": "oct",
+      "day": "31",
+      "type": "Observance",
+      "to": "BB, MVP, SN, ST, TH, SH, HH, NDS, HB",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Halloween",
+      "month": "oct",
+      "day": "31",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Halloween",
+      "month": "nov",
+      "day": "1",
+      "type": "Christian",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Halloween",
+      "month": "nov",
+      "day": "1",
+      "type": "Christian",
+      "to": "BW, BY, NRW, RLP, SL",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "All Saints' Day",
+      "month": "nov",
+      "day": "1",
+      "type": "Christian",
+      "to": "HB, SN, TH, NDS (community)",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "All Souls' Day",
+      "month": "nov",
+      "day": "2",
+      "type": "Christian",
+      "to": "NDS",
+      "except": "none"
+    }
+
+  ,
+    {
+      "holiday": "true",
+      "name": "Night of Broken Glass Remembrance Day",
+      "month": "nov",
+      "day": "9",
+      "type": "Observance",
+      "to": "NDS",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "9th of November",
+      "month": "nov",
+      "day": "9",
+      "type": "Observance",
+      "to": "Berlin",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "St. Martin's Day",
+      "month": "nov",
+      "day": "11",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "National Day of Mourning",
+      "month": "nov",
+      "day": "19",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Repentance Day",
+      "month": "nov",
+      "day": "19",
+      "type": "Observance",
+      "to":  "BY, SL, SN",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Repentance Day",
+      "month": "nov",
+      "day": "22",
+      "type": "Observance",
+      "to": "BW, HE, NDS, RLP, TH",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Repentance Day",
+      "month": "nov",
+      "day": "22",
+      "type": "Observance",
+      "to": "BW, HE, NDS, RLP, TH",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Sunday of the Dead",
+      "month": "nov",
+      "day": "26",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "First Advent Sunday",
+      "month": "nov",
+      "day": "23",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }  ,
+    {
+      "holiday": "true",
+      "name": "Saint Nicholas Da",
+      "month": "dec",
+      "day": "06",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    } ,
+    {
+      "holiday": "true",
+      "name": "Feast of the Immaculate Conception",
+      "month": "dec",
+      "day": "08",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Second Advent Sunday",
+      "month": "dec",
+      "day": "10",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Third Advent Sunday",
+      "month": "dec",
+      "day": "17",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "Remembrance Day for Roma and Sinti killed by Genocide",
+      "month": "dec",
+      "day": "19",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    },
+    {
+      "holiday": "true",
+      "name": "December Solstice",
+      "month": "dec",
+      "day": "22",
+      "type": "Season",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Fourth Advent Sunday",
+      "month": "dec",
+      "day": "24",
+      "type": "Observance",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Christmas Eve",
+      "month": "dec",
+      "day": "24",
+      "type": "Half-day holiday",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Christmas Day",
+      "month": "dec",
+      "day": "25",
+      "type": "National holiday",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "Boxing Day",
+      "month": "dec",
+      "day": "26",
+      "type": "National holiday",
+      "to": "all",
+      "except": "none"
+    }
+  ,
+    {
+      "holiday": "true",
+      "name": "New Year's Eve",
+      "month": "dec",
+      "day": "31",
+      "type": "Half-day holiday",
+      "to": "all",
+      "except": "none"
+    }
+  ]
+}
+
+

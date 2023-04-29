@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/black_overlay" />
+
+            <stroke android:color="@color/button_stroke" />
+
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+
+            <stroke android:color="@color/button_stroke" />
+            <gradient
+                android:startColor="@color/app_button_dark"
+                android:endColor="@color/app_button_lite"
+                android:angle="0" />
+
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+</selector>

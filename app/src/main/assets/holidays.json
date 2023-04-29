@@ -1,0 +1,680 @@
+{
+	"events" : [
+		{
+			"holiday": "true",
+			"name": "Neujahr",
+			"month": "jan",
+			"day": "1",
+			"type": "National holiday",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Offenbarung",
+			"month": "jan",
+			"day": "6",
+			"type": "Local holiday",
+			"to": "BW, BY, ST",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Deutsch-französischer Tag",
+			"month": "jan",
+			"day": "22",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Gedenktag für die Opfer des Nationalsozialismus",
+			"month": "jan",
+			"day": "27",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Europäischer Tag der Privatsphäre",
+			"month": "jan",
+			"day": "28",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Kinderhospiztag",
+			"month": "feb",
+			"day": "10",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Valentinstag",
+			"month": "feb",
+			"day": "14",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Faschingsmontag",
+			"month": "feb",
+			"day": "24",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Karneval / Faschingsdienstag",
+			"month": "feb",
+			"day": "25",
+			"type": "Christian",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Karneval / Aschermittwoch",
+			"month": "feb",
+			"day": "26",
+			"type": "Silent day",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Internationaler Frauentag",
+			"month": "mar",
+			"day": "8",
+			"type": "Observance",
+			"to": "all",
+			"except": "BE"
+		},
+		{
+			"holiday": "true",
+			"name": "Internationaler Frauentag",
+			"month": "mar",
+			"day": "8",
+			"type": "Local holiday",
+			"to": "Berlin",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "St. Patrick's Day",
+			"month": "mar",
+			"day": "17",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "März Tagundnachtgleiche",
+			"month": "mar",
+			"day": "20",
+			"type": "Season",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Girls 'Day - Berufsinformationstag",
+			"month": "mar",
+			"day": "26",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Die Sommerzeit beginnt",
+			"month": "mar",
+			"day": "29",
+			"type": "Clock change/Daylight Saving Time",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Palmsonntag",
+			"month": "apr",
+			"day": "5",
+			"type": "Christian",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Gründonnerstag",
+			"month": "apr",
+			"day": "9",
+			"type": "Silent day",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Guter Freitag - Stille Tag",
+			"month": "apr",
+			"day": "10",
+			"type": "National holiday",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Ostersonntag",
+			"month": "apr",
+			"day": "12",
+			"type": "Local holiday",
+			"to": "Brandenburg",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Ostersonntag",
+			"month": "apr",
+			"day": "12",
+			"type": "Silent day",
+			"to": "all",
+			"except": "BB"
+		},
+		{
+			"holiday": "true",
+			"name": "Ostermontag",
+			"month": "apr",
+			"day": "13",
+			"type": "National holiday",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Deutscher Biertag",
+			"month": "apr",
+			"day": "23",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Walpurgisnacht",
+			"month": "apr",
+			"day": "30",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Maifeiertag",
+			"month": "may",
+			"day": "1",
+			"type": "National holiday",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Europatag",
+			"month": "may",
+			"day": "5",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Muttertag",
+			"month": "may",
+			"day": "10",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Vatertag",
+			"month": "may",
+			"day": "21",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Christi Himmelfahrt",
+			"month": "may",
+			"day": "21",
+			"type": "National holiday",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Tag der Verfassung",
+			"month": "may",
+			"day": "23",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Pfingstsonntag",
+			"month": "may",
+			"day": "31",
+			"type": "Local holiday",
+			"to": "Brandenburg",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Pfingstsonntag",
+			"month": "may",
+			"day": "31",
+			"type": "Christian",
+			"to": "all",
+			"except": "BB"
+		},
+		{
+			"holiday": "true",
+			"name": "Pfingstmontag",
+			"month": "jun",
+			"day": "1",
+			"type": "National holiday",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Internationaler Kindertag",
+			"month": "jun",
+			"day": "1",
+			"type": "Observance",
+			"to": "BE, BB, MVP, SN, ST, TH",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Europäischer Fahrrad Tag",
+			"month": "jun",
+			"day": "3",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Tag der Sehbehinderten",
+			"month": "jun",
+			"day": "6",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Der Leib Christi",
+			"month": "jun",
+			"day": "11",
+			"type": "Local holiday",
+			"to": "BW, BY, HE, NRW, RLP, SL",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Der Leib Christi",
+			"month": "jun",
+			"day": "11",
+			"type": "Local holiday",
+			"to": "Sachsen, Thuringia",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Tag der Musik (erster Tag)",
+			"month": "jun",
+			"day": "19",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Juni-Sonnenwende",
+			"month": "jun",
+			"day": "20",
+			"type": "Season",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Autofreier Sonntag",
+			"month": "jun",
+			"day": "21",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Tag der Architektur",
+			"month": "jun",
+			"day": "27",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Friedensfest in Augsburg",
+			"month": "aug",
+			"day": "8",
+			"type": "Local holiday",
+			"to": "Bavaria*",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Maria Himmelfahrt",
+			"month": "aug",
+			"day": "15",
+			"type": "Local holiday",
+			"to": "Bavaria, Saarland",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Weltfriedenstag",
+			"month": "sep",
+			"day": "1",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Tag der deutschen Sprache",
+			"month": "sep",
+			"day": "12",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Europäische Tage des Denkmals (Tag des offenen Denkmals)",
+			"month": "sep",
+			"day": "13",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Tag der Heimat",
+			"month": "sep",
+			"day": "13",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Deutscher Weltkindertag",
+			"month": "sep",
+			"day": "20",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "September Tagundnachtgleiche",
+			"month": "sep",
+			"day": "22",
+			"type": "Season",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Tag der Deutschen Einheit",
+			"month": "oct",
+			"day": "3",
+			"type": "National holiday",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Erntedankfest",
+			"month": "oct",
+			"day": "4",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Tag der Bibliotheken",
+			"month": "oct",
+			"day": "24",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Die Sommerzeit endet",
+			"month": "oct",
+			"day": "25",
+			"type": "Clock change/Daylight Saving Time",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "World Thrift Day",
+			"month": "oct",
+			"day": "30",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Tag der Reformation",
+			"month": "oct",
+			"day": "31",
+			"type": "Local holiday",
+			"to": "BB, HB, HH, MVP, NDS, SH, SN, ST, TH",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Halloween",
+			"month": "oct",
+			"day": "31",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Allerheiligen - Stille Tag",
+			"month": "nov",
+			"day": "1",
+			"type": "National holiday",
+			"to": "BW, BY, NRW, RLP, SL",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Nacht der Glasscherben Gedenktag",
+			"month": "nov",
+			"day": "9",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Mauerfall",
+			"month": "nov",
+			"day": "9",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "St. Martinstag",
+			"month": "nov",
+			"day": "11",
+			"type": "Christian",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Nationalfeiertag der Trauer",
+			"month": "nov",
+			"day": "15",
+			"type": "Silent day",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Tag der Buße",
+			"month": "nov",
+			"day": "18",
+			"type": "Local holiday",
+			"to": "Sachsen",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Sonntag der Toten",
+			"month": "nov",
+			"day": "22",
+			"type": "Silent day",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Erster Adventssonntag",
+			"month": "nov",
+			"day": "29",
+			"type": "Christian",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Zweiter Adventssonntag",
+			"month": "dec",
+			"day": "6",
+			"type": "Christian",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Sankt Nikolaus Tag",
+			"month": "dec",
+			"day": "6",
+			"type": "Christian",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Dritter Adventssonntag",
+			"month": "dec",
+			"day": "13",
+			"type": "Christian",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Gedenktag für Roma und Sinti, die durch Völkermord getötet wurden",
+			"month": "dec",
+			"day": "19",
+			"type": "Observance",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Vierter Adventssonntag",
+			"month": "dec",
+			"day": "20",
+			"type": "Christian",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Dezember Sonnenwende",
+			"month": "dec",
+			"day": "21",
+			"type": "Season",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "false",
+			"name": "Heiligabend",
+			"month": "dec",
+			"day": "24",
+			"type": "Silent day",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Weihnachtstag",
+			"month": "dec",
+			"day": "25",
+			"type": "National holiday",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Weihnachtstag",
+			"month": "dec",
+			"day": "26",
+			"type": "National holiday",
+			"to": "all",
+			"except": "none"
+		},
+		{
+			"holiday": "true",
+			"name": "Silvester",
+			"month": "dec",
+			"day": "31",
+			"type": "Bank holiday",
+			"to": "all",
+			"except": "none"
+		},
+
+	]
+}

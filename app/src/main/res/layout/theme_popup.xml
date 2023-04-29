@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:id="@+id/theme_layout"
+    android:layout_margin="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/search_bar"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Themen"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="top|right"
+            android:id="@+id/close"
+            android:background="@drawable/ic_close_win"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/search_bar"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioBlue"
+                android:text="Blaues Thema"
+                android:drawableRight="@drawable/ic_blue"
+                android:buttonTint="@color/blue"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGreen"
+                android:text="Grünes Thema"
+                android:drawableRight="@drawable/ic_green"
+                android:buttonTint="@color/green"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioRed"
+                android:text="Rotes Thema"
+                android:drawableRight="@drawable/ic_red"
+                android:buttonTint="@color/red"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioPurple"
+                android:text="Lila Thema"
+                android:drawableRight="@drawable/ic_purple"
+                android:buttonTint="@color/purple"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioPink"
+                android:text="Rosa Thema"
+                android:drawableRight="@drawable/ic_pink"
+                android:buttonTint="@color/pink"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioDef"
+                android:text="Standardthema"
+                android:drawableRight="@drawable/ic_default"
+                android:buttonTint="@android:color/black"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>
