@@ -241,9 +241,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         StringBuilder messageBuilder = new StringBuilder();
 
-        messageBuilder.append("Name:- ").append(contactNumber).append("\n");
+        messageBuilder.append("Name:- ").append(name).append("\n");
         messageBuilder.append("\nContact Number:- ").append(contactNumber).append("\n");
-        messageBuilder.append("\nTime:- ").append(contactNumber).append("\n");
+        messageBuilder.append("\nTime:- ").append(dateTimeParts).append("\n");
 
         builder.setMessage(messageBuilder.toString());
         builder.setPositiveButton("OK", null);
