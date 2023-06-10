@@ -75,14 +75,14 @@ public class OnbordActivity extends AppCompatActivity {
         itemplayOnline.setImage(R.drawable.logonakath);
 
         OnboardItem itemplayOnline2 = new OnboardItem();
-        itemplayOnline2.setTitle("app features Tittle 1");
-        itemplayOnline2.setDescription("app features Description 1");
-        itemplayOnline2.setImage(R.drawable.flashimage);
+        itemplayOnline2.setTitle("දවසේ සුභ වෙලාව");
+        itemplayOnline2.setDescription("සුභ මුහුර්ථ දවසේ ශුභ කාලය");
+        itemplayOnline2.setImage(R.drawable.app_ic_trs);
 
         OnboardItem itemplayOnline3 = new OnboardItem();
-        itemplayOnline3.setTitle("app features Tittle 2 ");
-        itemplayOnline3.setDescription("app features Description 2");
-        itemplayOnline3.setImage(R.drawable.logonakath);
+        itemplayOnline3.setTitle("2023 අළුත් අවුරුදු නැකැත් ");
+        itemplayOnline3.setDescription("දැන් පහුසුවෙන්ම සිංහල අලුත් අවුරුදු නැකැත්.");
+        itemplayOnline3.setImage(R.drawable.flashimage);
 
 
 
