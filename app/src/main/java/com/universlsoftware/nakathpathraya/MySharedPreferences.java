@@ -6,6 +6,9 @@ import android.content.SharedPreferences;
 public class MySharedPreferences {
     private static final String PREF_NAME = "MyPref";
     private static final String IS_LOGGED_IN = "isLoggedIn";
+
+
+
     private SharedPreferences pref;
 
 

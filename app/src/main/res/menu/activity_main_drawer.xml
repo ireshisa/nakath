@@ -7,40 +7,47 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:icon="@drawable/baseline_home_24"
+            android:title="මුල් පිටුව" />
+
+
+
+        <item
+            android:id="@+id/nav_aurudu"
+            android:icon="@drawable/baseline_menu_book_24"
+            android:title="අවුරුදු නැකත්" />
 
 
         <item
             android:id="@+id/nav_poyaDay"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/baseline_shield_moon_24"
             android:title="පො‌හොය දින" />
+
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_sunanwatima"
+            android:icon="@drawable/baseline_storm_24"
+            android:title="හුනන් වැටීමේ  පලාපල" />
 
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/baseline_signal_cellular_alt_24"
             android:title="අයවැය" />
-
-
 
         <item
             android:id="@+id/nav_niwadudina"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/baseline_calendar_month_24"
             android:title="නිවාඩු දින" />
 
         <item
             android:id="@+id/nav_rahu"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/baseline_access_time_24"
             android:title="රාහු කාලය " />
 
         <item
             android:id="@+id/nav_marusitina"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/baseline_dangerous_24"
             android:title="මරු සිටින දිශාව" />
+
 
 
     </group>

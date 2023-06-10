@@ -53,8 +53,8 @@
         android:layout_margin="10dp"
         android:background="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintTop_toBottomOf="@+id/image_view203"
+        app:layout_constraintVertical_bias="0."
         tools:layout_editor_absoluteX="40dp">
 
         <!-- Table Heading -->
@@ -258,14 +258,19 @@
     </TableLayout>
 
 
-    <ImageView
-        android:layout_width="211dp"
-        android:layout_height="218dp"
-        android:layout_marginTop="56dp"
-        android:src="@drawable/compass"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/image_view203"
+        android:layout_width="176dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="34dp"
         app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+        app:layout_constraintTop_toTopOf="@+id/animationView2"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/batgrim" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

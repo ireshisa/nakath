@@ -93,9 +93,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @SuppressLint("Range")
     public String[] getUserData(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
-        String[] columns = { COL_2, COL_3 };
+        String[] columns = {COL_2, COL_3};
         String selection = "ID = ?";
-        String[] selectionArgs = { id };
+        String[] selectionArgs = {id};
         Cursor cursor = db.query(TABLENAME, columns, selection, selectionArgs, null, null, null);
         String[] userData = new String[2];
         if (cursor.moveToFirst()) {

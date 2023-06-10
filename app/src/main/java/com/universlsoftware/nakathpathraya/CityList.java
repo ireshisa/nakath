@@ -6,11 +6,45 @@ public class CityList {
     private double lon;
     private String city;
 
-    public CityList(double lat, double lon, String city) {
+    private String name;
+    private String  number;
+    private String   time;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public CityList(double lat, double lon, String city,String name,String number,String time) {
         this.lat = lat;
         this.lon = lon;
         this.city = city;
+
+        this.name = name;
+        this.number = number;
+        this.time = time;
+
     }
+
 
     public double getLat() {
         return lat;

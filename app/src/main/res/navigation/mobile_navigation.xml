@@ -8,19 +8,19 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.universlsoftware.nakathpathraya.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="මුල් පිටුව"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.universlsoftware.nakathpathraya.ui.gallery.GalleryFragment"
+        android:name="com.universlsoftware.nakathpathraya.ui.ayawaya.AyawayaFragment"
         android:label="අයවැය"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.universlsoftware.nakathpathraya.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:id="@+id/nav_sunanwatima"
+        android:name="com.universlsoftware.nakathpathraya.ui.hunupalapala.HunupalaFragment"
+        android:label="හුනන් වැටීමේ  පලාපල"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
@@ -30,7 +30,7 @@
         tools:layout="@layout/fragment_poya_day2" />
     <fragment
         android:id="@+id/nav_niwadudina"
-        android:name="com.universlsoftware.nakathpathraya.ui.nwadudina.Nwadudina"
+        android:name="com.universlsoftware.nakathpathraya.ui.poyaday.nwadudina.Nwadudina"
         android:label="නිවාඩු දින"
         tools:layout="@layout/fragment_nwadudina" />
     <fragment
@@ -43,6 +43,11 @@
         android:name="com.universlsoftware.nakathpathraya.ui.marusitina.MarusitinaFragment"
         android:label="මරු සිටින දිශාව"
         tools:layout="@layout/fragment_marusitina" />
+    <fragment
+        android:id="@+id/nav_aurudu"
+        android:name="com.universlsoftware.nakathpathraya.ui.aurudu.AuruduFragment"
+        android:label="අවුරුදු නැකත්"
+        tools:layout="@layout/fragment_aurudu" />
 
 
 </navigation>

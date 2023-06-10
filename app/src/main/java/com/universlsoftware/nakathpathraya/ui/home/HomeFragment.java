@@ -7,7 +7,6 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,25 +26,22 @@ import com.universlsoftware.nakathpathraya.MainActivity;
 import com.universlsoftware.nakathpathraya.MapsActivity;
 import com.universlsoftware.nakathpathraya.MySharedPreferences;
 import com.universlsoftware.nakathpathraya.R;
-
 import com.universlsoftware.nakathpathraya.databinding.FragmentHomeBinding;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class HomeFragment extends Fragment implements SensorEventListener{
+public class HomeFragment extends Fragment implements SensorEventListener {
 
     private FragmentHomeBinding binding;
-
-
     private ImageView imageView;
     private float[] mGravity = new float[3];
     private float[] mGeomagnetic = new float[3];
     private float azimuth = 0f;
     private float correctAzimuth = 0f;
-    public TextView textViewDate,daye,name;
-    public static   CardView poya, aurudunakath, rahukalaya, aywaya, subamurtha, marusitinadishwa, niwadudina, suanpalapala,jothirya;
+    public TextView textViewDate, daye, name;
+    public static CardView poya, aurudunakath, rahukalaya, aywaya, subamurtha, marusitinadishwa, niwadudina, suanpalapala, jothirya;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -57,19 +53,19 @@ public class HomeFragment extends Fragment implements SensorEventListener{
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         imageView = binding.compass;
-
+        suanpalapala = binding.sunanagwatima;
         poya = binding.poya;
         aurudunakath = binding.aurudunakath;
         rahukalaya = binding.rahukalaya;
         aywaya = binding.aywaya;
-        subamurtha = binding.subamurtha;
+
         marusitinadishwa = binding.marusitinadishwa;
         niwadudina = binding.niwadudina;
-        suanpalapala = binding.subamurtha;
+
         jothirya = binding.jothirya;
-        textViewDate= binding.textViewDate;
-        daye= binding.day;
-        name= binding.name;
+        textViewDate = binding.textViewDate;
+        daye = binding.day;
+        name = binding.name;
 
         niwadudina.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,13 +87,19 @@ public class HomeFragment extends Fragment implements SensorEventListener{
         });
 
 
-
-
         jothirya.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Handle the click event here
                 startActivity(new Intent(getContext(), MapsActivity.class));
+            }
+        });
+        poya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Handle the click event here
+                NavController navController = Navigation.findNavController(view);
+                navController.navigate(R.id.nav_poyaDay);
             }
         });
 
@@ -107,7 +109,6 @@ public class HomeFragment extends Fragment implements SensorEventListener{
             public void onClick(View view) {
                 NavController navController = Navigation.findNavController(view);
                 navController.navigate(R.id.nav_rahu);
-
             }
         });
 
@@ -122,8 +123,27 @@ public class HomeFragment extends Fragment implements SensorEventListener{
         });
 
 
+        suanpalapala.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController(view);
+                navController.navigate(R.id.nav_sunanwatima);
+
+            }
+        });
+
+        aurudunakath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController(view);
+                navController.navigate(R.id.nav_aurudu);
+
+            }
+        });
+
+
         MySharedPreferences sharedPreferences = new MySharedPreferences(getActivity().getBaseContext());
-        name.setText("ආයුබෝවන් "+ sharedPreferences.getUser());
+        name.setText("ආයුබෝවන් ");
 
 
 //        final TextView textView = binding.textHome;
@@ -131,7 +151,6 @@ public class HomeFragment extends Fragment implements SensorEventListener{
 
         getDate();
         return root;
-
 
     }
 
@@ -142,10 +161,9 @@ public class HomeFragment extends Fragment implements SensorEventListener{
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMMM dd", locale); // create Sinhala date format
         String sinhalaDate = sdf.format(calendar.getTime());
 
-
         SimpleDateFormat sd2f = new SimpleDateFormat("EEEE", locale); // set Sinhala date format with day of the week
         String formattedDate = sd2f.format(calendar.getTime()); // format the date as a string
-    // output the formatted date
+        // output the formatted date
         daye.setText(formattedDate);
         textViewDate.setText(sinhalaDate);
     }

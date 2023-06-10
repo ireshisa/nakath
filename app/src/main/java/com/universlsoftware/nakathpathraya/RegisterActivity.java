@@ -37,7 +37,8 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Boolean validate = true;
-                if (!password.getText().toString().equals(repassword.getText().toString())) {
+                if (!password.getText().toString().equals(repassword.getText().toString()))
+                {
                     repassword.setError("password Not matching");
                     password.setError("password Not matching");
                     validate = false;

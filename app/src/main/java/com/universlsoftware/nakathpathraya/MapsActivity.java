@@ -1,36 +1,41 @@
 package com.universlsoftware.nakathpathraya;
 
+
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
-import android.content.Context;
+import android.app.AlertDialog;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.location.Location;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.Circle;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.universlsoftware.nakathpathraya.databinding.ActivityMapsBinding;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,GoogleMap.OnMarkerClickListener {
 
     private GoogleMap mMap;
+
+    private Circle currentLocationCircle;
+
     List<CityList> cityList;
     String status;
 
@@ -54,6 +59,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -65,40 +71,106 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
         mMap = googleMap;
-        for (CityList city : cityList) {
-            double latitude = city.getLat();
-            double longitude = city.getLon();
-            String name = city.getCity();
-            getwederdata(latitude, longitude, name);
-        }
 
 
-        // Enable the My Location layer
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
+        if (ActivityCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
             return;
         }
         mMap.setMyLocationEnabled(true);
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.getUiSettings().setCompassEnabled(true);
+        mMap.getUiSettings().setMapToolbarEnabled(true);
+        mMap.getUiSettings().setTiltGesturesEnabled(true);
+        mMap.getUiSettings().setRotateGesturesEnabled(true);
+        mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
-        // Get the user's current location
-        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
-        // Check if the user's location is available
-        if (location != null) {
-            // Animate the camera to the user's location
-            LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15));
-        }
+        FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        fusedLocationClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if (location != null) {
+                    LatLng currentLocation = new LatLng(location.getLatitude(), location.getLongitude());
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 7.6f));
+
+                    // Create a circle options object
+                    CircleOptions circleOptions = new CircleOptions()
+                            .center(currentLocation)
+                            .radius(5000) // Set the radius in meters
+                            .strokeColor(Color.RED) // Set the stroke color
+                            .strokeWidth(30); // Set the stroke width
+
+                    // Add the circle to the map
+                    currentLocationCircle = mMap.addCircle(circleOptions);
+
+                    final double initialMinDistance = 0.5;
+
+
+                    double minDistance = initialMinDistance;
+                    Marker nearestMarker = null;
+                     int x=0;
+                    for (CityList city : cityList) {
+                        nearestMarker = null;
+//            double latitude = city.getLat();
+//            double longitude = city.getLon();
+//            String name = city.getCity();
+//            getwederdata(latitude, longitude, name);
+
+                        String latitude = String.valueOf(city.getLat());
+                        String longitude = String.valueOf(city.getLon());
+                        assert latitude != null;
+                        double latitudenumber = Double.parseDouble(latitude);
+
+                        assert longitude != null;
+                        double longitudenumber = Double.parseDouble(longitude);
+
+                        LatLng location2 = new LatLng(latitudenumber, longitudenumber);
+
+                        MarkerOptions markerOptions = new MarkerOptions();
+                        markerOptions.position(location2);
+                        markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
+                        Marker marker = mMap.addMarker(markerOptions);
+                        marker.setTag(x); // Set a unique tag for each marker
+                            x++;
+                        // Calculate the distance between the current location and the garage location
+                        double distance = calculateDistance(currentLocation.latitude, currentLocation.longitude, latitudenumber, longitudenumber);
+                        Log.i("wisadhas", String.valueOf(distance));
+                        if (distance <= 5 ) {
+
+                            marker.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+                        }
+
+
+
+
+                    }
+
+
+                    mMap.setOnMarkerClickListener(MapsActivity.this);
+                }
+
+
+            }
+        });
+
+
     }
 
+    private double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
+        double theta = lon1 - lon2;
+        double distance = Math.sin(Math.toRadians(lat1)) * Math.sin(Math.toRadians(lat2))
+                + Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2))
+                * Math.cos(Math.toRadians(theta));
+        distance = Math.acos(distance);
+        distance = Math.toDegrees(distance);
+        distance = distance * 60 * 1.1515;
+        distance = distance * 1.609344; // Convert to kilometers
+        return distance;
+    }
 
     private void getwederdata(double lat, double lon, String city) {
 
@@ -126,15 +198,56 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     void adddata() {
 
         cityList = new ArrayList<>();
-        cityList.add(new CityList(30.5928, 114.3052, "Wuhan, China"));
-        cityList.add(new CityList(18.7883, 98.9853, "Chiang Mai, Thailand"));
-        cityList.add(new CityList(25.2048, 55.2708, "Dubai, United Arab Emirates"));
-        cityList.add(new CityList(16.8409, 96.1735, "Yangon, Myanmar"));
-        cityList.add(new CityList(13.7563, 100.5018, "Bangkok, Thailand"));
-        cityList.add(new CityList(27.7172, 85.3240, "Kathmandu, Nepal"));
-        cityList.add(new CityList(29.5657, 106.5512, "Chongqing, China, Nepal"));
-        cityList.add(new CityList(24.8607, 67.0011, "Karachi, Pakistan, Nepal"));
+        cityList.add(new CityList(6.585395, 79.960739, "Wuhan, China","iresh sammera","07484756484","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(	6.124593, 81.101074, "Wuhan, China","achala saliya","2124567890.","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(8.592200, 81.196793, "Wuhan, China","thusitha dananjaya","12124567890","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(7.290572, 80.633728, "Wuhan, China","sameera","07484756484","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(	6.894070, 79.902481, "Wuhan, China","muru danantaya","07484756484","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(	7.189464, 79.858734, "Wuhan, China","Julian Wiggins","07484756484","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(6.053519, 80.220978, "Wuhan, China","iresh sammera","212-456-7890","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(6.7144, 79.9891, "Wuhan, China","Alisson Benjamin","0237854385342","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(6.9107787, 79.8851087, "Wuhan, China","iresh sammera","12124567890","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(6.7144, 79.9891, "Wuhan, China","Lilia Moran","0724659574947","7: 00 am - 9: 00 am -"));;
+        cityList.add(new CityList(6.7145, 79.9845, "Wuhan, China","Chloe Bright","07484756484","7: 00 am - 9: 00 am -"));
+        cityList.add(new CityList(6.7149, 79.9895, "Wuhan, China","Julie Villa","12124567890","7: 00 am - 9: 00 am -"));
+    }
 
 
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        // Retrieve the tag assigned to the marker
+        String ID = String.valueOf(marker.getTag());;
+        CityList secondList = cityList.get(Integer.parseInt(ID));
+
+        String name =  secondList.getName();;
+        String contactNumber = secondList.getNumber();
+        String openDateTime = secondList.getTime();
+
+
+
+                    // Show the data in a pop-up window
+                    showGarageDetails(name, contactNumber,openDateTime);
+
+
+
+
+
+        return false;
+    }
+
+    private void showGarageDetails(String name, String contactNumber, String dateTimeParts) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(name);
+
+        StringBuilder messageBuilder = new StringBuilder();
+
+        messageBuilder.append("Name:- ").append(contactNumber).append("\n");
+        messageBuilder.append("\nContact Number:- ").append(contactNumber).append("\n");
+        messageBuilder.append("\nTime:- ").append(contactNumber).append("\n");
+
+        builder.setMessage(messageBuilder.toString());
+        builder.setPositiveButton("OK", null);
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }

@@ -98,7 +98,6 @@ String userid;
         });
 
 
-
     }
 
     private void loradData(String userId ) {
